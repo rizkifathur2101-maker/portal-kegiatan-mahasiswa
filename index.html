@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portal Kegiatan Mahasiswa</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header & Navigasi -->
+    <header class="header">
+        <div class="container">
+            <h1>Portal Kegiatan Mahasiswa</h1>
+            <nav class="nav">
+                <a href="#hero">Beranda</a>
+                <a href="#kegiatan">Kegiatan</a>
+                <a href="#pendaftaran">Pendaftaran</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <!-- Hero Section -->
+        <section id="hero" class="hero">
+            <h2>Selamat Datang di Portal Kegiatan</h2>
+            <p>Temukan dan ikuti berbagai kegiatan mahasiswa seru di kampus!</p>
+        </section>
+
+        <!-- Card Section (Minimal 3 Cards) -->
+        <section id="kegiatan">
+            <h2>Daftar Kegiatan</h2>
+            <div class="card-grid">
+                <article class="card">
+                    <h3>Seminar AI & Data Science</h3>
+                    <p>Pembahasan seputar kecerdasan buatan dan analisis data masa kini.</p>
+                </article>
+                <article class="card">
+                    <h3>Workshop Web Development</h3>
+                    <p>Belajar membangun aplikasi web modern dari dasar hingga mahir.</p>
+                </article>
+                <article class="card">
+                    <h3>Turnamen E-Sports Kampus</h3>
+                    <p>Kompetisi game antar mahasiswa untuk mengasah kerja sama tim.</p>
+                </article>
+            </div>
+        </section>
+
+        <!-- Tabel Section (dengan Zebra Row) -->
+        <section>
+            <h2>Jadwal Kegiatan</h2>
+            <div class="table-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>No</th>
+                            <th>Nama Kegiatan</th>
+                            <th>Tanggal</th>
+                            <th>Lokasi</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>Seminar AI & Data Science</td>
+                            <td>12 Oktober 2026</td>
+                            <td>Auditorium Utama</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Workshop Web Development</td>
+                            <td>15 Oktober 2026</td>
+                            <td>Lab Komputer 2</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>Turnamen E-Sports Kampus</td>
+                            <td>20 Oktober 2026</td>
+                            <td>Aula Student Center</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <!-- Form Section -->
+        <section id="pendaftaran" class="form-section">
+            <h2>Form Pendaftaran Kegiatan</h2>
+            <form action="#" method="POST">
+                <div class="form-group">
+                    <label for="nama">Nama Lengkap:</label>
+                    <input type="text" id="nama" name="nama" required placeholder="Masukkan nama lengkap">
+                </div>
+
+                <div class="form-group">
+                    <label for="kegiatan-select">Pilih Kegiatan:</label>
+                    <select id="kegiatan-select" name="kegiatan" required>
+                        <option value="">-- Pilih Kegiatan --</option>
+                        <option value="seminar">Seminar AI & Data Science</option>
+                        <option value="workshop">Workshop Web Development</option>
+                        <option value="esports">Turnamen E-Sports Kampus</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="alasan">Alasan Mengikuti:</label>
+                    <textarea id="alasan" name="alasan" rows="4" placeholder="Tuliskan alasan Anda..."></textarea>
+                </div>
+
+                <button type="submit" class="btn">Daftar Sekarang</button>
+            </form>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 Portal Kegiatan Mahasiswa. All rights reserved.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
